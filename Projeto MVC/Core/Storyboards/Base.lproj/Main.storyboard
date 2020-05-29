@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Projeto_MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ViewMovie" customModule="Projeto_MVC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZCC-T7-CKa">
+                                <rect key="frame" x="0.0" y="337" width="414" height="559"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXk-pL-Wju">
+                                <rect key="frame" x="195.5" y="100" width="189" height="24"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="film" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="q0j-zW-Y20">
+                                <rect key="frame" x="24.5" y="101" width="158" height="155.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q0j-zW-Y20" secondAttribute="height" multiplier="1:1" id="Thb-R4-SN2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jsb-tL-Uvu">
+                                <rect key="frame" x="196" y="147" width="188" height="111"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZCC-T7-CKa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Xw-bT-sva"/>
+                            <constraint firstItem="q0j-zW-Y20" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.176339" id="9tu-AJ-UOu"/>
+                            <constraint firstItem="Jsb-tL-Uvu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.454106" id="IR5-qQ-CwI"/>
+                            <constraint firstItem="ZCC-T7-CKa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.623884" id="J2L-yJ-EKL"/>
+                            <constraint firstAttribute="bottom" secondItem="ZCC-T7-CKa" secondAttribute="bottom" id="JVC-gn-Bi3"/>
+                            <constraint firstItem="KXk-pL-Wju" firstAttribute="width" secondItem="Jsb-tL-Uvu" secondAttribute="width" multiplier="1.00532" id="Phd-RM-Rl1"/>
+                            <constraint firstItem="Jsb-tL-Uvu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.4" id="Si5-eN-aJw"/>
+                            <constraint firstItem="KXk-pL-Wju" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.4" id="TYa-6s-T5q"/>
+                            <constraint firstItem="Jsb-tL-Uvu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.123884" id="WhT-2A-q3w"/>
+                            <constraint firstItem="q0j-zW-Y20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="asQ-PV-PD8"/>
+                            <constraint firstItem="KXk-pL-Wju" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0267857" id="bwy-re-w50"/>
+                            <constraint firstItem="q0j-zW-Y20" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.4" id="dsc-uj-gWp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZCC-T7-CKa" secondAttribute="trailing" id="mju-5T-QVQ"/>
+                            <constraint firstItem="Jsb-tL-Uvu" firstAttribute="bottom" secondItem="q0j-zW-Y20" secondAttribute="bottom" id="u5h-us-8SS"/>
+                            <constraint firstItem="KXk-pL-Wju" firstAttribute="top" secondItem="q0j-zW-Y20" secondAttribute="top" id="vth-Op-RVI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="movieDescription" destination="Jsb-tL-Uvu" id="sWi-Ft-WCl"/>
+                            <outlet property="movieImage" destination="q0j-zW-Y20" id="fuY-Az-6Az"/>
+                            <outlet property="movieTitle" destination="KXk-pL-Wju" id="J2J-ET-PH5"/>
+                            <outlet property="moviesTableView" destination="ZCC-T7-CKa" id="Z1m-eq-J2Q"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="film" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
